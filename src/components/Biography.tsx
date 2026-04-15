@@ -4,39 +4,52 @@ interface BiographyProps {
 
 const translations = {
   en: {
-    heading: "Biography",
+    heading: "About Me",
     paragraphs: [
-      "Alexander Voss began his musical education at the Royal Academy of Music in London and went on to study at the Juilliard School in New York, where he was taught by distinguished professors including Maria Steinberg, Richard Hartmann, and Prof. Elisabeth Werner. He is currently continuing his studies at the Berlin University of the Arts under the guidance of the renowned pianist Daniel Barenboim.",
-      "From an early age, his talent was recognized through numerous awards, including several first prizes with maximum scores at international competitions as well as the Young Virtuoso Prize. In 2016, he was accepted into the \"International Foundation for Musical Excellence,\" where he participated in a documentary production in 2021.",
-      "Significant masterclasses and collaboration with renowned professors such as Prof. Lang Lang, Martha Argerich, and Prof. Andras Schiff provided him with valuable artistic inspiration. As part of the 5th International Piano Festival in Vienna in 2024, he participated in a masterclass with the internationally celebrated pianist Krystian Zimerman, aiming to gain further impulses for his pianistic career.",
-      "Through scholarships from the Steinway Foundation and currently from the European Music Academy, Alexander Voss has received valuable support on his musical journey.",
-      "His stage presence has led him to prestigious concert halls such as the Royal Albert Hall, Carnegie Hall, Berlin Philharmonie, Vienna Musikverein, and the Sydney Opera House, among many other significant venues. During the \"European Young Talents Tour,\" he captivated audiences across the continent at renowned locations such as Teatro La Fenice in Venice, Concertgebouw in Amsterdam, and many more.",
-      "Innovative perspective, determination, and exceptional musical talent naturally guide the young musician to the world's finest stages, where he continues to share his passion for music with audiences everywhere.",
+      "My name is Anastasia Ivleva, and I am a play-based child psychologist specializing in working with children who have developmental features, psycho-speech and speech delays, as well as children with autism spectrum disorders.",
+      "I work with children from 2 to 12 years old. Play is the primary language of childhood — it is through play that children express their feelings, process experiences, and learn to interact with the world. My sessions are built on this natural foundation.",
+      "My approach combines play therapy, art therapy, sand therapy, and developmental techniques adapted to each child individually. I create a safe, warm space where every child can feel accepted and understood.",
+      "I work not only with children, but also actively support parents — consultations and recommendations for daily interaction with the child are an important part of my work.",
     ],
+    credentials: [
+      "Higher psychological education",
+      "Specialization in play therapy and child development",
+      "Work with children with ASD and speech delays",
+      "Individual approach to each family",
+    ],
+    credentialsTitle: "Education & Approach",
   },
   de: {
-    heading: "Biografie",
+    heading: "Über mich",
     paragraphs: [
-      "Alexander Voss begann seine musikalische Ausbildung an der Royal Academy of Music in London und studierte anschliessend an der Juilliard School in New York, wo er von angesehenen Professoren wie Maria Steinberg, Richard Hartmann und Prof. Elisabeth Werner unterrichtet wurde. Derzeit setzt er sein Studium an der Universitat der Kunste Berlin unter der Leitung des renommierten Pianisten Daniel Barenboim fort.",
-      "Sein Talent wurde schon fruh durch zahlreiche Auszeichnungen anerkannt, darunter mehrere erste Preise mit Hochstpunktzahl bei internationalen Wettbewerben sowie der Young Virtuoso Prize. 2016 wurde er in die \"Internationale Stiftung fur musikalische Exzellenz\" aufgenommen, wo er 2021 an einer Dokumentarproduktion teilnahm.",
-      "Bedeutende Meisterkurse und die Zusammenarbeit mit renommierten Professoren wie Prof. Lang Lang, Martha Argerich und Prof. Andras Schiff gaben ihm wertvolle kunstlerische Impulse. Im Rahmen des 5. Internationalen Klavierfestivals in Wien 2024 nahm er an einem Meisterkurs mit dem international gefeierten Pianisten Krystian Zimerman teil.",
-      "2025 gewann er den ersten Preis beim Internationalen Klavierwettbewerb in Genf.",
-      "Durch Stipendien der Steinway-Stiftung und derzeit der Europaischen Musikakademie hat Alexander Voss wertvolle Unterstutzung auf seinem musikalischen Weg erhalten.",
-      "Seine Buhnenprasenz hat ihn zu renommierten Konzertsalen wie der Royal Albert Hall, Carnegie Hall, Berliner Philharmonie, dem Wiener Musikverein und der Sydney Opera House gefuhrt. Wahrend der \"European Young Talents Tour\" begeisterte er Publikum in ganz Europa mit Konzerten an renommierten Orten wie dem Teatro La Fenice in Venedig und dem Concertgebouw in Amsterdam.",
-      "Innovative Perspektive, Entschlossenheit und aussergewohnliches musikalisches Talent fuhren den jungen Musiker naturlich zu den besten Buhnen der Welt, wo er seine Leidenschaft fur Musik mit Publikum uberall teilt.",
+      "Mein Name ist Anastasia Ivleva, ich bin Kinderspieltherapeutin und spezialisiert auf die Arbeit mit Kindern, die Entwicklungsbesonderheiten, psycho-sprachliche und sprachliche Verzögerungen sowie Autismus-Spektrum-Störungen haben.",
+      "Ich arbeite mit Kindern von 2 bis 12 Jahren. Das Spiel ist die Hauptsprache der Kindheit — durch das Spiel drücken Kinder ihre Gefühle aus, verarbeiten Erfahrungen und lernen, mit der Welt zu interagieren.",
+      "Mein Ansatz kombiniert Spieltherapie, Kunsttherapie, Sandtherapie und Entwicklungstechniken, die individuell an jedes Kind angepasst werden. Ich schaffe einen sicheren, warmen Raum, in dem sich jedes Kind akzeptiert und verstanden fühlen kann.",
+      "Ich arbeite nicht nur mit Kindern, sondern unterstütze auch aktiv Eltern — Beratungen und Empfehlungen für die tägliche Interaktion mit dem Kind sind ein wichtiger Teil meiner Arbeit.",
     ],
+    credentials: [
+      "Höhere psychologische Ausbildung",
+      "Spezialisierung auf Spieltherapie und Kinderentwicklung",
+      "Arbeit mit Kindern mit ASD und Sprachverzögerungen",
+      "Individueller Ansatz für jede Familie",
+    ],
+    credentialsTitle: "Ausbildung & Ansatz",
   },
   ru: {
-    heading: "Биография",
+    heading: "Обо мне",
     paragraphs: [
-      "Александр Фосс начал своё музыкальное образование в Королевской академии музыки в Лондоне и продолжил учёбу в Джульярдской школе в Нью-Йорке, где учился у выдающихся профессоров, включая Марию Штайнберг, Ричарда Хартманна и профессора Элизабет Вернер. В настоящее время он продолжает своё обучение в Берлинском университете искусств под руководством известного пианиста Даниэля Баренбойма.",
-      "Его талант был признан с раннего возраста благодаря многочисленным наградам, включая несколько первых премий с максимальными баллами на международных конкурсах и премию Young Virtuoso. В 2016 году он был принят в \"Международный фонд музыкального мастерства\", где участвовал в документальной съёмке в 2021 году.",
-      "Значительные мастер-классы и сотрудничество с известными профессорами, такими как профессор Ланг Ланг, Марта Аргерих и профессор Андраш Шифф, обогатили его художественный опыт. В рамках 5-го Международного фортепианного фестиваля в Вене в 2024 году он участвовал в мастер-классе с международно известным пианистом Кристианом Цимерманом.",
-      "В 2025 году он выиграл первый приз на Международном конкурсе пианистов в Женеве.",
-      "Благодаря стипендиям от фонда Steinway и в настоящее время от Европейской музыкальной академии, Александр Фосс получил ценную поддержку на своём музыкальном пути.",
-      "Его сценическое присутствие привело его в престижные концертные залы, такие как Роял Альберт Холл, Карнеги-холл, Берлинская филармония, Венский музикферайн и Сиднейский оперный театр, и многие другие значительные площадки. Во время \"European Young Talents Tour\" он очаровал аудиторию по всей Европе, выступая в известных местах, таких как Театро Ла Фениче в Венеции и Концертгебау в Амстердаме.",
-      "Инновационный подход, решительность и исключительный музыкальный талант естественным образом ведут молодого музыканта на лучшие мировые сцены, где он продолжает делиться своей страстью к музыке со слушателями по всему миру.",
+      "Меня зовут Анастасия Ивлева, я — детский игровой психолог, специализирующийся на работе с детьми с особенностями развития, задержками психо-речевого и речевого развития, а также с детьми с расстройствами аутистического спектра.",
+      "Я работаю с детьми от 2 до 12 лет. Игра — это главный язык детства: именно через неё дети выражают свои чувства, проживают опыт и учатся взаимодействовать с миром. Мои занятия строятся на этой природной основе.",
+      "Мой подход сочетает игровую терапию, арт-терапию, песочную терапию и развивающие методики, адаптированные под каждого ребёнка индивидуально. Я создаю безопасное, тёплое пространство, где каждый ребёнок может чувствовать себя принятым и понятым.",
+      "Я работаю не только с детьми, но и активно поддерживаю родителей — консультации и рекомендации по ежедневному взаимодействию с ребёнком являются важной частью моей работы.",
     ],
+    credentials: [
+      "Высшее психологическое образование",
+      "Специализация по игровой терапии и детскому развитию",
+      "Работа с детьми с РАС и задержками речи",
+      "Индивидуальный подход к каждой семье",
+    ],
+    credentialsTitle: "Образование и подход",
   },
 }
 
@@ -45,20 +58,36 @@ export default function Biography({ language }: BiographyProps) {
 
   return (
     <section id="biography" className="py-24 md:py-36 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-charcoal mb-12 text-pretty">
           {t.heading}
         </h2>
-        <div className="space-y-6">
-          {t.paragraphs.map((paragraph, index) => (
-            <p
-              key={index}
-              className="text-lg leading-relaxed text-charcoal/90 animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {paragraph}
-            </p>
-          ))}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="md:col-span-2 space-y-6">
+            {t.paragraphs.map((paragraph, index) => (
+              <p
+                key={index}
+                className="text-lg leading-relaxed text-charcoal/90 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <div className="animate-fade-in-up animation-delay-300">
+            <div className="line-accent mb-6"></div>
+            <h3 className="text-charcoal mb-6">{t.credentialsTitle}</h3>
+            <ul className="space-y-4">
+              {t.credentials.map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">—</span>
+                  <span className="text-charcoal/80 text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

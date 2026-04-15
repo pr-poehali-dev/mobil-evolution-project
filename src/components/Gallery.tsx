@@ -20,82 +20,82 @@ const galleryItems = {
   en: [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Archway Portrait",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/651d03f0-de64-433a-bbaf-96fa493e2803.jpg",
+      title: "About the Specialist",
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Classical Courtyard",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/82b9654d-9642-47cc-928f-4590d0fb7de7.jpg",
+      title: "Play Therapy",
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnel Lights",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/384a3e5e-aead-404c-bfd5-2b0d8754f5c7.jpg",
+      title: "Speech Development",
     },
     {
       id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Piano Moment",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/5f790941-71fa-4123-9cfa-ff015932a7a5.jpg",
+      title: "Art Therapy",
     },
     {
       id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Urban Gallery",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/09bc3ab1-5bb9-456a-a893-52e71e98a1f7.jpg",
+      title: "Sand Therapy",
     },
   ],
   de: [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Bogenportrat",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/651d03f0-de64-433a-bbaf-96fa493e2803.jpg",
+      title: "Über die Spezialistin",
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Klassischer Innenhof",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/82b9654d-9642-47cc-928f-4590d0fb7de7.jpg",
+      title: "Spieltherapie",
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnellichter",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/384a3e5e-aead-404c-bfd5-2b0d8754f5c7.jpg",
+      title: "Sprachentwicklung",
     },
     {
       id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Am Klavier",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/5f790941-71fa-4123-9cfa-ff015932a7a5.jpg",
+      title: "Kunsttherapie",
     },
     {
       id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Stadtgalerie",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/09bc3ab1-5bb9-456a-a893-52e71e98a1f7.jpg",
+      title: "Sandtherapie",
     },
   ],
   ru: [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Портрет в арке",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/651d03f0-de64-433a-bbaf-96fa493e2803.jpg",
+      title: "О специалисте",
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Классический двор",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/82b9654d-9642-47cc-928f-4590d0fb7de7.jpg",
+      title: "Игровая терапия",
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Огни туннеля",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/384a3e5e-aead-404c-bfd5-2b0d8754f5c7.jpg",
+      title: "Развитие речи",
     },
     {
       id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "За роялем",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/5f790941-71fa-4123-9cfa-ff015932a7a5.jpg",
+      title: "Арт-терапия",
     },
     {
       id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Городская галерея",
+      image: "https://cdn.poehali.dev/projects/25534baf-f7f1-4b58-80ee-2b790e56ced9/files/09bc3ab1-5bb9-456a-a893-52e71e98a1f7.jpg",
+      title: "Песочная терапия",
     },
   ],
 }
@@ -166,7 +166,6 @@ export default function Gallery({ language }: GalleryProps) {
               className="max-w-full max-h-full object-contain"
             />
 
-            {/* Close button */}
             <button
               onClick={() => setSelectedId(null)}
               className="absolute top-6 right-6 text-white hover:text-gold transition-colors"
@@ -177,7 +176,6 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Previous button */}
             <button
               onClick={goToPrev}
               className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors"
@@ -188,7 +186,6 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Next button */}
             <button
               onClick={goToNext}
               className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors"
@@ -199,7 +196,6 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Image counter */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm">
               {selectedIndex + 1} / {items.length}
             </div>

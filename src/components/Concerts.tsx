@@ -4,94 +4,109 @@ interface ConcertsProps {
 
 const translations = {
   en: {
-    heading: "Upcoming Concerts",
-    learnMore: "Learn More",
+    heading: "Services",
+    bookNow: "Book Now",
+    duration: "Duration",
+    format: "Format",
   },
   de: {
-    heading: "Kommende Konzerte",
-    learnMore: "Mehr erfahren",
+    heading: "Leistungen",
+    bookNow: "Jetzt buchen",
+    duration: "Dauer",
+    format: "Format",
   },
   ru: {
-    heading: "Предстоящие концерты",
-    learnMore: "Подробнее",
+    heading: "Услуги",
+    bookNow: "Записаться",
+    duration: "Длительность",
+    format: "Формат",
   },
 }
 
-const concerts = {
+const services = {
   en: [
     {
-      date: "08.12.2024",
-      time: "18:00",
-      title: "Piano Recital",
-      venue: "Torhaus Hamburg",
-      location: "Hamburg",
+      title: "Initial Consultation",
+      description: "Diagnosis and evaluation of the child's development level, history gathering, recommendations for parents",
+      duration: "60 min",
+      format: "In-person / Online",
     },
     {
-      date: "16.12.2024",
-      time: "19:00",
-      title: "Piano Recital HFMT",
-      venue: "Hamburg, Orchestra Studio",
-      location: "Hamburg",
+      title: "Play Therapy Session",
+      description: "Individual therapeutic session using play, art therapy and sand therapy methods",
+      duration: "45–60 min",
+      format: "In-person",
     },
     {
-      date: "21.12.2024",
-      time: "17:00",
-      title: "Charity Concert",
-      venue: "Rathaus Zehlendorf, Burgersaal",
-      location: "Berlin",
+      title: "Speech Development",
+      description: "Work on psycho-speech and speech delays using play-based techniques and sensory methods",
+      duration: "45 min",
+      format: "In-person",
+    },
+    {
+      title: "Parent Consultation",
+      description: "Recommendations for interaction with the child, answer questions, create a development plan",
+      duration: "60 min",
+      format: "In-person / Online",
     },
   ],
   de: [
     {
-      date: "08.12.2024",
-      time: "18:00",
-      title: "Klavierabend",
-      venue: "Torhaus Hamburg",
-      location: "Hamburg",
+      title: "Erstberatung",
+      description: "Diagnose und Beurteilung des Entwicklungsstandes des Kindes, Anamnese, Empfehlungen für Eltern",
+      duration: "60 Min.",
+      format: "Vor Ort / Online",
     },
     {
-      date: "16.12.2024",
-      time: "19:00",
-      title: "Klavierabend HFMT",
-      venue: "Hamburg, Orchesterstudio",
-      location: "Hamburg",
+      title: "Spieltherapiesitzung",
+      description: "Individuelle therapeutische Sitzung mit Spiel-, Kunst- und Sandtherapiemethoden",
+      duration: "45–60 Min.",
+      format: "Vor Ort",
     },
     {
-      date: "21.12.2024",
-      time: "17:00",
-      title: "Benefizkonzert",
-      venue: "Rathaus Zehlendorf, Burgersaal",
-      location: "Berlin",
+      title: "Sprachentwicklung",
+      description: "Arbeit an psycho-sprachlichen und sprachlichen Verzögerungen mit spielerischen und sensorischen Methoden",
+      duration: "45 Min.",
+      format: "Vor Ort",
+    },
+    {
+      title: "Elternberatung",
+      description: "Empfehlungen für die Interaktion mit dem Kind, Beantwortung von Fragen, Erstellung eines Entwicklungsplans",
+      duration: "60 Min.",
+      format: "Vor Ort / Online",
     },
   ],
   ru: [
     {
-      date: "8 декабря 2024",
-      time: "18:00",
-      title: "Сольный концерт",
-      venue: "Торхаус Гамбург",
-      location: "Гамбург",
+      title: "Первичная консультация",
+      description: "Диагностика и оценка уровня развития ребёнка, сбор анамнеза, рекомендации для родителей",
+      duration: "60 мин",
+      format: "Очно / Онлайн",
     },
     {
-      date: "16 декабря 2024",
-      time: "19:00",
-      title: "Концерт в HFMT",
-      venue: "Гамбург, Оркестровая студия",
-      location: "Гамбург",
+      title: "Игровая терапия",
+      description: "Индивидуальное терапевтическое занятие с использованием методов игровой терапии, арт-терапии и песочной терапии",
+      duration: "45–60 мин",
+      format: "Очно",
     },
     {
-      date: "21 декабря 2024",
-      time: "17:00",
-      title: "Благотворительный концерт",
-      venue: "Ратуша Целендорф, Бургерзаль",
-      location: "Берлин",
+      title: "Развитие речи",
+      description: "Работа с задержками психо-речевого и речевого развития с помощью игровых и сенсорных методик",
+      duration: "45 мин",
+      format: "Очно",
+    },
+    {
+      title: "Консультация для родителей",
+      description: "Рекомендации по взаимодействию с ребёнком, ответы на вопросы, составление плана развития",
+      duration: "60 мин",
+      format: "Очно / Онлайн",
     },
   ],
 }
 
 export default function Concerts({ language }: ConcertsProps) {
   const t = translations[language]
-  const concertList = concerts[language]
+  const serviceList = services[language]
 
   return (
     <section id="concerts" className="py-32 md:py-48 bg-background">
@@ -102,22 +117,25 @@ export default function Concerts({ language }: ConcertsProps) {
         </div>
 
         <div className="space-y-8">
-          {concertList.map((concert, idx) => (
+          {serviceList.map((service, idx) => (
             <div key={idx} className="pb-8 border-b border-taupe/30 last:border-b-0">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 items-start">
                 <div>
-                  <h3 className="text-charcoal mb-1">{concert.date}</h3>
-                  <small className="text-taupe">{concert.time}</small>
+                  <small className="text-taupe block mb-1">{t.duration}</small>
+                  <h3 className="text-charcoal">{service.duration}</h3>
+                  <small className="text-taupe mt-2 block">{t.format}: {service.format}</small>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-charcoal mb-1">{concert.title}</h3>
-                  <p className="text-charcoal/70 mb-1">{concert.venue}</p>
-                  <small className="text-taupe">{concert.location}</small>
+                  <h3 className="text-charcoal mb-2">{service.title}</h3>
+                  <p className="text-charcoal/70">{service.description}</p>
                 </div>
                 <div className="flex justify-start md:justify-end">
-                  <button className="text-gold hover:text-gold/80 transition-colors text-sm font-medium">
-                    {t.learnMore} &rarr;
-                  </button>
+                  <a
+                    href="#contact"
+                    className="text-gold hover:text-gold/80 transition-colors text-sm font-medium"
+                  >
+                    {t.bookNow} &rarr;
+                  </a>
                 </div>
               </div>
             </div>

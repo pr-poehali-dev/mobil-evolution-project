@@ -8,20 +8,20 @@ interface NavigationProps {
 
 const translations = {
   en: {
-    biography: "Biography",
-    concerts: "Concerts",
+    biography: "About",
+    concerts: "Services",
     gallery: "Gallery",
     contact: "Contact",
   },
   de: {
-    biography: "Biographie",
-    concerts: "Konzerte",
+    biography: "Über mich",
+    concerts: "Leistungen",
     gallery: "Galerie",
     contact: "Kontakt",
   },
   ru: {
-    biography: "Биография",
-    concerts: "Концерты",
+    biography: "Обо мне",
+    concerts: "Услуги",
     gallery: "Галерея",
     contact: "Контакт",
   },
@@ -64,12 +64,10 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className={`${logoColor} font-serif text-2xl font-normal tracking-wide transition-colors duration-300`}>
-            A. Voss
+          <div className={`${logoColor} font-serif text-xl font-normal tracking-wide transition-colors duration-300`}>
+            А. Ивлева
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#biography"
@@ -97,7 +95,6 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
             </a>
           </div>
 
-          {/* Language Selector */}
           <div className="flex items-center gap-4">
             <div className="flex gap-2">
               {(["en", "de", "ru"] as const).map((lang) => (
@@ -113,7 +110,6 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`md:hidden ${menuButtonColor} transition-colors duration-300`}
@@ -123,31 +119,34 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div
             className={`md:hidden pb-4 space-y-3 border-t ${borderColor} ${mobileMenuBg} transition-all duration-300`}
           >
             <a
               href="#biography"
+              onClick={() => setIsOpen(false)}
               className={`block text-sm ${mobileLinkColor} hover:text-gold transition-colors duration-300 py-2`}
             >
               {t.biography}
             </a>
             <a
               href="#concerts"
+              onClick={() => setIsOpen(false)}
               className={`block text-sm ${mobileLinkColor} hover:text-gold transition-colors duration-300 py-2`}
             >
               {t.concerts}
             </a>
             <a
               href="#gallery"
+              onClick={() => setIsOpen(false)}
               className={`block text-sm ${mobileLinkColor} hover:text-gold transition-colors duration-300 py-2`}
             >
               {t.gallery}
             </a>
             <a
               href="#contact"
+              onClick={() => setIsOpen(false)}
               className={`block text-sm ${mobileLinkColor} hover:text-gold transition-colors duration-300 py-2`}
             >
               {t.contact}

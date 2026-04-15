@@ -8,58 +8,69 @@ interface ContactProps {
 const translations = {
   en: {
     heading: "Contact",
-    subheading: "Get in Touch",
+    subheading: "Book a consultation or ask a question",
     email: "Email",
     phone: "Phone",
     message: "Message",
     send: "Send Message",
     location: "Location",
     name: "Name",
-    successMessage: "Message sent successfully!",
-    locationValue: "Berlin, Germany",
-    phoneValue: "+49 (30) 123-4567",
+    successMessage: "Message sent! I will contact you soon.",
+    locationValue: "Moscow, Russia",
+    phoneValue: "+7 (999) 000-00-00",
+    emailValue: "ivleva@example.com",
+    childAge: "Child's age (years)",
+    concern: "What is your concern?",
   },
   de: {
     heading: "Kontakt",
-    subheading: "Treten Sie mit uns in Kontakt",
+    subheading: "Beratung buchen oder eine Frage stellen",
     email: "E-Mail",
     phone: "Telefon",
     message: "Nachricht",
     send: "Nachricht senden",
     location: "Standort",
-    name: "Name",
-    successMessage: "Nachricht erfolgreich gesendet!",
-    locationValue: "Berlin, Deutschland",
-    phoneValue: "+49 (30) 123-4567",
+    name: "Ihr Name",
+    successMessage: "Nachricht gesendet! Ich melde mich bald bei Ihnen.",
+    locationValue: "Moskau, Russland",
+    phoneValue: "+7 (999) 000-00-00",
+    emailValue: "ivleva@example.com",
+    childAge: "Alter des Kindes (Jahre)",
+    concern: "Was beschäftigt Sie?",
   },
   ru: {
     heading: "Контакты",
-    subheading: "Свяжитесь с нами",
+    subheading: "Запишитесь на консультацию или задайте вопрос",
     email: "Эл. почта",
     phone: "Телефон",
-    message: "Сообщение",
+    message: "Ваш вопрос или пожелание",
     send: "Отправить",
     location: "Город",
-    name: "Имя",
-    successMessage: "Сообщение успешно отправлено!",
-    locationValue: "Берлин, Германия",
-    phoneValue: "+49 (30) 123-4567",
+    name: "Ваше имя",
+    successMessage: "Сообщение отправлено! Свяжусь с вами в ближайшее время.",
+    locationValue: "Москва, Россия",
+    phoneValue: "+7 (999) 000-00-00",
+    emailValue: "ivleva@example.com",
+    childAge: "Возраст ребёнка (лет)",
+    concern: "Что вас беспокоит?",
   },
 }
 
 export default function Contact({ language }: ContactProps) {
   const t = translations[language]
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
+  const [formData, setFormData] = useState({ name: "", email: "", childAge: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const mailtoLink = `mailto:hello@example.com?subject=${encodeURIComponent(`New message from ${formData.name}`)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
+    const subject = `Запись на консультацию от ${formData.name}`
+    const body = `Имя: ${formData.name}\nEmail: ${formData.email}\nВозраст ребёнка: ${formData.childAge}\n\n${formData.message}`
+    const mailtoLink = `mailto:${t.emailValue}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     window.location.href = mailtoLink
 
     setSubmitted(true)
-    setFormData({ name: "", email: "", message: "" })
+    setFormData({ name: "", email: "", childAge: "", message: "" })
     setTimeout(() => setSubmitted(false), 5000)
   }
 
@@ -73,11 +84,10 @@ export default function Contact({ language }: ContactProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div className="space-y-8 animate-fade-in-up">
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.email}</small>
-              <p className="text-charcoal">hello@example.com</p>
+              <p className="text-charcoal">{t.emailValue}</p>
             </div>
             <div>
               <small className="font-medium text-charcoal/70 mb-2 block">{t.phone}</small>
@@ -89,7 +99,6 @@ export default function Contact({ language }: ContactProps) {
             </div>
           </div>
 
-          {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6 animate-fade-in-up">
             {submitted && (
               <div className="p-4 bg-gold/10 border border-gold/20 text-charcoal rounded text-sm">
@@ -113,6 +122,15 @@ export default function Contact({ language }: ContactProps) {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
+                className="w-full bg-warm-white border border-taupe/30 px-4 py-3 text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-gold transition-colors"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder={t.childAge}
+                value={formData.childAge}
+                onChange={(e) => setFormData({ ...formData, childAge: e.target.value })}
                 className="w-full bg-warm-white border border-taupe/30 px-4 py-3 text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-gold transition-colors"
               />
             </div>
